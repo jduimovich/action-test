@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: use yq
     steps:
+    - uses: actions/checkout@v2
     - name: YQ extract path from filename 
       id: yq
       uses: jduimovich/action-yq@master
