@@ -1,0 +1,17 @@
+on: [push]
+
+jobs:
+  test_yq_job:
+    runs-on: ubuntu-latest
+    name: use yq
+    steps:
+    - name: Hello world action step
+      id: yq
+      uses: jduimovich/action-yq@v1
+      with:
+        file: 'aFileName'
+        path: 'a.b.c'
+    # Use the output from the `hello` step
+    - name: Get the result
+      run: echo "The result was ${{ steps.yq.outputs.result }}"
+
