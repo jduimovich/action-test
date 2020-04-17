@@ -1,0 +1,2 @@
+#extract the namespace from the yaml file
+yq r namespace.yaml  metadata.name
