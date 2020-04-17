@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: use yq
     steps:
-    - name: Hello world action step
+    - name: YQ action see what happens
       id: yq
       uses: jduimovich/action-yq@master
       with:
