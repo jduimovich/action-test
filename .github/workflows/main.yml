@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: yq
-      uses: jduimovich/action-yq@v2
+      uses: jduimovich/action-yq@master
       with:
         file: 'aFileName'
         path: 'a.b.c'
