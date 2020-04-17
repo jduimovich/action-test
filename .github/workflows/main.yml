@@ -5,13 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     name: use yq
     steps:
-    - name: YQ action see what happens
+    - name: YQ extract path from filename 
       id: yq
       uses: jduimovich/action-yq@master
       with:
-        file: 'aFileName'
-        path: 'a.b.c'
-    # Use the output from the `hello` step
-    - name: Get the result
+        file: 'namespace.yaml'
+        path: 'metadata.name'
+    # Use the output from the `yq` step
+    - name: Print the namespace extracted 
       run: echo "The result was ${{ steps.yq.outputs.result }}"
 
