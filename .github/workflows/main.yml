@@ -4,7 +4,7 @@ jobs:
   test_yq_job:
     runs-on: ubuntu-latest
     name: use yq
-    steps:
+    steps: 
     - uses: actions/checkout@v2
     - name: YQ extract path from filename 
       id: yq
